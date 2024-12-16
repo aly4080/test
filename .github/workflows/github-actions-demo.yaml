@@ -1,0 +1,12 @@
+name: Github Actions Demo
+on: push
+jobs:
+  Explore-Github-Actions
+    runs on: windows-latest
+    steps:
+      - name: Print the triggering event
+	run: echo "The job was triggered by ${{ github.event_name }}."	
+      - name: Print the OS of the runner
+	run: echo "The job is running on a ${{ runner.os }} server "	
+
+
